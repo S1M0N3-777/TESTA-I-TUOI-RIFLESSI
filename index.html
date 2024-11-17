@@ -16,9 +16,9 @@
 
        
         <div class="semaforo">
-            <div id="circle1"></div>
-            <div id="circle2"></div>
-            <div id="circle3"></div>
+            <div class="same1" id="circle1"></div>
+            <div class="same2" id="circle2"></div>
+            <div class="same3" id="circle3"></div>
         </div>
 
        
@@ -33,9 +33,51 @@
 
         <div class="buttons">
             <form action="">
-                <input type="button" name="bottone1" value="PREMI QUI PER INIZIARE!">
+                <input type="button" name="bottone1" value="PREMI QUI PER INIZIARE!" id="button">
             </form>
         </div>
+        <div class="inner">
+            <p id="inner-text"></p>
+        </div>
     </div>
+    <script>
+        function random(min, max) {
+    let n = Math.random() * (max - min) + min
+    n = parseInt(n)
+    console.log(n)
+    return n
+    }
+
+    function delay(){
+        circle1.classList.remove("same1")
+        circle1.classList.add("green")
+        circle2.classList.remove("same2")
+        circle2.classList.add("green")
+        circle3.classList.remove("same3")      
+        circle3.classList.add("green")
+        check = true
+        now = Date.now()
+    }
+
+    let button = document.querySelector("#button")
+    let circle1 = document.querySelector("#circle1")
+    let circle2 = document.querySelector("#circle2")
+    let circle3 = document.querySelector("#circle3")
+    let check = false
+    let inner = document.querySelector("#inner-text")
+    let now
+    let reflex
+    button.addEventListener("click", function () {
+    if (check === false) {
+        let rnd = random(1000, 3000)
+        inner.innerHTML = "Attendi il semaforo verde, stai attento!"
+        setTimeout(delay, rnd);
+    } else {
+        reflex = Date.now() - now;
+        inner.innerHTML = "Il tuo tempo di reazione è: " + reflex + "ms"
+       
+    }
+})
+    </script>
 </body>
 </html>
