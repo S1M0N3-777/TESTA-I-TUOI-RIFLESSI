@@ -1,0 +1,24 @@
+#circle1{
+    width: 200px;
+    height: 200px;
+    background: red;
+    border-radius: 50%;
+}
+#circle2{
+    width: 200px;
+    height: 200px;
+    background: red;
+    border-radius: 50%;
+    margin-right: 25px;
+    margin-left: 25px;
+}
+#circle3{
+    width: 200px;
+    height: 200px;
+    background: red;
+    border-radius: 50%;
+}
+
+body{
+    background-color:#3bd5e3;
+}
