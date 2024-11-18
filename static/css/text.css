@@ -8,3 +8,16 @@
     text-align: center;
     width: 500px;
 }
+
+#inner-text{
+    font-size: 30px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+#bestscore{
+    font-size: 25px;
+    margin-top: 20px;
+    font-weight: bold;
+    text-align: center;
+}

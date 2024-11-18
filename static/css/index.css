@@ -1,10 +1,4 @@
-#circle1{
-    width: 200px;
-    height: 200px;
-    background: red;
-    border-radius: 50%;
-}
-#circle2{
+.same1{
     width: 200px;
     height: 200px;
     background: red;
@@ -12,11 +6,21 @@
     margin-right: 25px;
     margin-left: 25px;
 }
-#circle3{
+.same2{
     width: 200px;
     height: 200px;
     background: red;
     border-radius: 50%;
+    margin-right: 25px;
+    margin-left: 25px;
+}
+.same3{
+    width: 200px;
+    height: 200px;
+    background: red;
+    border-radius: 50%;
+    margin-right: 25px;
+    margin-left: 25px;
 }
 
 body{
@@ -29,4 +33,12 @@ body{
     height: 200px;
     background:green;
     border-radius: 50%;
+    margin-right: 25px;
+    margin-left: 25px;
+}
+
+.inner{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
