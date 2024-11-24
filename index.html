@@ -50,8 +50,8 @@
     }
 
     function delay(){
-        // Non vengono cambiati i colori, da capire perchè
         
+        button.innerHTML = "PREMI ORA!"
         circle1.classList.add("green")
         circle1.classList.remove("same1")
         circle2.classList.add("green")
@@ -72,6 +72,7 @@
         circle3.classList.remove("green")  
         check = false 
         button.disabled = false
+        button.innerHTML = "PREMI QUI PER INIZIARE!"
         
     }
 
@@ -83,7 +84,7 @@
     let inner = document.querySelector("#inner-text")
     let now
     let reflex
-    let bestScore = 100000000000000000
+    let bestScore = 1000000000
     let upadteScore = document.querySelector("#bestscore")
     button.addEventListener("click", function () {
     if (check === false) {
